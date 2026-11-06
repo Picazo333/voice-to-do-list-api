@@ -1,0 +1,14 @@
+{
+  "template_repository": "https://github.com/4GeeksAcademy/voice-command-api",
+  "template_commit": "bab45fe91823d3dc5a285269f7c3b66898ab0224",
+  "template_commit_subject": "chore: migrate backend dependency management to uv",
+  "template_commit_date": "2026-07-21T19:35:00+00:00",
+  "template_has_license_file": false,
+  "frontend_byte_lock": "source/frontend-sha256.txt",
+  "syllabus_repository": "https://github.com/4GeeksAcademy/ai-engineering-syllabus",
+  "syllabus_commit": "fd2da034894ba93ba738559280ccde074ab1d953",
+  "syllabus_readme": "source/OFFICIAL_README.md",
+  "syllabus_readme_es": "source/OFFICIAL_README.es.md",
+  "syllabus_provenance_file": "source/PROVENANCE.json",
+  "note": "Frontend files were copied from the template commit and not edited. The syllabus snapshot describes a browser Web Speech client that calls task routes from POST /instruction. The template frontend posts audio or manual text to POST /transcribe and expects the backend to execute the action. This repo implements both contracts and leaves the frontend as copied."
+}

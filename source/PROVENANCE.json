@@ -1,0 +1,16 @@
+[
+  {
+    "file": "OFFICIAL_README.md",
+    "official_path": "content/projects/voice-to-do-list-api/README.md",
+    "resource_uri": "repo://4GeeksAcademy/ai-engineering-syllabus/sha/fd2da034894ba93ba738559280ccde074ab1d953/contents/content/projects/voice-to-do-list-api/README.md",
+    "sha256": "bf2c951e850ccf6b98752cb134c1b05408a842f8fb55a1dac00f2ea6d6a6afa8",
+    "mcp_result": "/cursor/stores/user/grok-bot/agents/109bf303-57bf-411f-9289-4c27c172d63d/assets/94407113dbc76e4efcf4577936f230ab994898d5dd6a451f9aac22ce6dc8fca9.txt"
+  },
+  {
+    "file": "OFFICIAL_README.es.md",
+    "official_path": "content/projects/voice-to-do-list-api/README.es.md",
+    "resource_uri": "repo://4GeeksAcademy/ai-engineering-syllabus/sha/fd2da034894ba93ba738559280ccde074ab1d953/contents/content/projects/voice-to-do-list-api/README.es.md",
+    "sha256": "dc5b1639fcfea7e2b9a7933f73878b9540db3ca13a3dec36a753fffe7b669f41",
+    "mcp_result": "/cursor/stores/user/grok-bot/agents/109bf303-57bf-411f-9289-4c27c172d63d/assets/a081eebe1e1932bab7b2109f914406f410be3316df3c11b7239bb1dfae7e1cd7.txt"
+  }
+]

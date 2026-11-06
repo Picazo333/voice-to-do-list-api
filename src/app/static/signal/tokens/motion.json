@@ -1,0 +1,21 @@
+{
+  "version": "4.0.0",
+  "easing": "cubic-bezier(.2,.8,.2,1)",
+  "hover_ms": 120,
+  "active_ms": 100,
+  "state_ms": 180,
+  "registration_ms": 560,
+  "connection_ms": 240,
+  "stage_ms": 560,
+  "hero_max_ms": 1200,
+  "viewport_max_ms": 1600,
+  "pointer_max_px": 6,
+  "raster_pointer_max_px": 2.4,
+  "section_offset_max_px": 10,
+  "reentry_cooldown_ms": 2000,
+  "trigger": {
+    "threshold": 0,
+    "rootMargin": "0px 0px -25% 0px"
+  },
+  "reduced": "static-final-cancel-all"
+}
