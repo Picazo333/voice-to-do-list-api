@@ -19,6 +19,8 @@
 - Antes de esta prueba, el alumno diagnosticó y resolvió un `404` de Groq en la ruta `POST /instruction` cambiando localmente el modelo a `openai/gpt-oss-20b`; este ajuste **no** se ha publicado como cambio de configuración en el repositorio.
 - En los fotogramas inspeccionados no se observó un archivo `.env` ni la API key, pero el video original contiene pestañas y contenidos personales ajenos al ejercicio, por lo que se debe publicar **solo un extracto depurado**.
 
+**Nota del alumno sobre la captura pendiente:** Se realizó y guardó la grabación de video de la prueba. Posteriormente se cerró la pantalla de la aplicación, por lo que no fue posible tomar una captura adicional del resultado final. El video disponible no muestra la respuesta de eliminación; en consecuencia, esta nota explica la ausencia de la captura, pero no se considera evidencia independiente de DELETE.
+
 ## Adjudicación
 
 **R25: parcialmente comprobado, NO cerrado.** Las rutas de crear, listar y marcar completada funcionan mediante audio capturado en navegador y respuesta de la API. Para acreditar las cuatro operaciones se necesita únicamente una captura o clip que muestre la respuesta de eliminación real (no repetir las tres anteriores).
