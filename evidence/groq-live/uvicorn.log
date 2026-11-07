@@ -1,0 +1,23 @@
+INFO:     Started server process [370131]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8008 (Press CTRL+C to quit)
+INFO:     127.0.0.1:36166 - "GET /tasks HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41656 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41660 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41666 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40856 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40870 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45532 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45538 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45542 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45552 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45564 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45580 - "POST /instruction HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45586 - "POST /transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45598 - "POST /transcribe HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48980 - "POST /transcribe HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [370131]

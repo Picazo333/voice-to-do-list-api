@@ -1,0 +1,4 @@
+:root { --motion-feedback:120ms; --motion-state:180ms; --motion-register:560ms; --motion-connect:240ms; --motion-hero-max:1200ms; --motion-pointer-max:6px; --motion-ease:cubic-bezier(.2,.8,.2,1); }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } [data-motion-node] { animation:none !important; transition:none !important; transform:none !important; } }
+html[data-motion="reduced"] { scroll-behavior:auto; }
+html[data-motion="reduced"] [data-motion-node] { animation:none !important; transition:none !important; transform:none !important; }

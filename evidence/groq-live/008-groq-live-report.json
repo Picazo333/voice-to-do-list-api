@@ -1,0 +1,239 @@
+{
+  "captured_at_cst": "2026-11-06 08:38:44 CST",
+  "base": "http://127.0.0.1:8008",
+  "criteria": {
+    "R14": {
+      "status": "PASS",
+      "command": "POST /instruction with VOICE_COMMAND_MOCK=0 and real GROQ_API_KEY",
+      "timestamp_cst": "2026-11-06 08:38:44 CST",
+      "model": "qwen/qwen3.8-27b",
+      "calls": [
+        {
+          "transcription": "add buy groceries to my list",
+          "http_status": 200,
+          "latency_ms": 462.1,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "POST",
+            "params": {
+              "title": "Buy groceries"
+            }
+          }
+        },
+        {
+          "transcription": "show my tasks",
+          "http_status": 200,
+          "latency_ms": 290.0,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "GET",
+            "params": {}
+          }
+        }
+      ],
+      "note": "Llamada real al SDK Groq chat.completions (temperature=0, response_format=json_object). Sin mock."
+    },
+    "R16": {
+      "status": "PASS",
+      "command": "POST /instruction x9 frases EN/ES distintas (modelo real)",
+      "timestamp_cst": "2026-11-06 08:38:44 CST",
+      "ok_json_shapes": 9,
+      "total": 9,
+      "semantic_checks": {
+        "create_en": true,
+        "create_es": true,
+        "list_en": true,
+        "list_es": true,
+        "patch_en": true,
+        "patch_es": true,
+        "delete_en": true,
+        "delete_es": true
+      },
+      "calls": [
+        {
+          "transcription": "add buy groceries to my list",
+          "http_status": 200,
+          "latency_ms": 30764.6,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "POST",
+            "params": {
+              "title": "Buy groceries"
+            }
+          }
+        },
+        {
+          "transcription": "añade comprar leche a mi lista",
+          "http_status": 200,
+          "latency_ms": 287.4,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "POST",
+            "params": {
+              "title": "Comprar leche"
+            }
+          }
+        },
+        {
+          "transcription": "Please add buy groceries to my list",
+          "http_status": 200,
+          "latency_ms": 350.7,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "POST",
+            "params": {
+              "title": "Buy groceries"
+            }
+          }
+        },
+        {
+          "transcription": "could you show my tasks",
+          "http_status": 200,
+          "latency_ms": 254.1,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "GET",
+            "params": {}
+          }
+        },
+        {
+          "transcription": "lista mis tareas",
+          "http_status": 200,
+          "latency_ms": 309.8,
+          "body": {
+            "endpoint": "/tasks",
+            "method": "GET",
+            "params": {}
+          }
+        },
+        {
+          "transcription": "mark task 1 as done",
+          "http_status": 200,
+          "latency_ms": 391.2,
+          "body": {
+            "endpoint": "/tasks/1",
+            "method": "PATCH",
+            "params": {
+              "done": true
+            }
+          }
+        },
+        {
+          "transcription": "marca la tarea 1 como hecha",
+          "http_status": 200,
+          "latency_ms": 324.2,
+          "body": {
+            "endpoint": "/tasks/1",
+            "method": "PATCH",
+            "params": {
+              "done": true
+            }
+          }
+        },
+        {
+          "transcription": "delete task 1",
+          "http_status": 200,
+          "latency_ms": 254.5,
+          "body": {
+            "endpoint": "/tasks/1",
+            "method": "DELETE",
+            "params": {}
+          }
+        },
+        {
+          "transcription": "elimina la tarea 1",
+          "http_status": 200,
+          "latency_ms": 384.5,
+          "body": {
+            "endpoint": "/tasks/1",
+            "method": "DELETE",
+            "params": {}
+          }
+        }
+      ],
+      "note": "System prompt exige JSON único; consistencia medida contra Groq real."
+    },
+    "R24": {
+      "status": "PASS",
+      "command": "POST /transcribe multipart with gTTS→ffmpeg wav; Whisper whisper-large-v3-turbo",
+      "timestamp_cst": "2026-11-06 08:38:44 CST",
+      "tts": "gTTS 2.5.4 → mp3 → ffmpeg 16kHz mono wav",
+      "transcription_model": "whisper-large-v3-turbo",
+      "calls": [
+        {
+          "file": "add_buy_groceries.wav",
+          "language": "en",
+          "http_status": 200,
+          "latency_ms": 3604.9,
+          "expect_substr": "groceries",
+          "transcription": "Add buy groceries to my list.",
+          "body": {
+            "transcription": "Add buy groceries to my list.",
+            "instruction": {
+              "endpoint": "/tasks",
+              "method": "POST",
+              "params": {
+                "title": "Buy groceries"
+              }
+            },
+            "result": {
+              "id": 1,
+              "title": "Buy groceries",
+              "done": false
+            }
+          },
+          "contains_expect": true
+        },
+        {
+          "file": "show_my_tasks.wav",
+          "language": "en",
+          "http_status": 200,
+          "latency_ms": 7280.6,
+          "expect_substr": "task",
+          "transcription": "Show my tasks",
+          "body": {
+            "transcription": "Show my tasks",
+            "instruction": {
+              "endpoint": "/tasks",
+              "method": "GET",
+              "params": {}
+            },
+            "result": [
+              {
+                "id": 1,
+                "title": "Buy groceries",
+                "done": false
+              }
+            ]
+          },
+          "contains_expect": true
+        },
+        {
+          "file": "delete_task_1.wav",
+          "language": "en",
+          "http_status": 200,
+          "latency_ms": 6631.5,
+          "expect_substr": "delete",
+          "transcription": "Delete Task 1.",
+          "body": {
+            "transcription": "Delete Task 1.",
+            "instruction": {
+              "endpoint": "/tasks/1",
+              "method": "DELETE",
+              "params": {}
+            },
+            "result": {
+              "message": "Task 1 deleted"
+            }
+          },
+          "contains_expect": true
+        }
+      ],
+      "note": "Audio TTS sintético generado en la caja. No es micrófono (R25 sigue HITL_MIGUEL)."
+    },
+    "R25": {
+      "status": "HITL_MIGUEL",
+      "note": "Micrófono real / flujo hablado punta a punta. La VM no tiene dispositivo; queda para Miguel."
+    }
+  }
+}
